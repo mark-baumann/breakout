@@ -1,0 +1,2 @@
+\\vmware-host\Shared Folders\Schreibtisch\breakout\breakout\Debug\breakout.exe
+\\vmware-host\Shared Folders\Schreibtisch\breakout\breakout\Debug\breakout.pdb

@@ -1,0 +1,3 @@
+﻿  main.cpp
+LINK : warning LNK4076: Inkrementelle Statusdatei "\\vmware-host\Shared Folders\Schreibtisch\breakout\breakout\Debug\breakout.ilk" ungültig (wird gelöscht); Link erfolgt nicht inkrementell.
+  breakout.vcxproj -> \\vmware-host\Shared Folders\Schreibtisch\breakout\breakout\Debug\breakout.exe
