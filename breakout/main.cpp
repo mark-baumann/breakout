@@ -7,7 +7,7 @@
 #include <time.h>
 
 #define SCREEN_WIDTH 52 //Spielrand in der Breite
-#define SCREEN_HEIGHT 20 //Spielrand in der Länge
+#define SCREEN_HEIGHT 20 //Spielrand in der LÃ¤nge
 
 #define MINX 2 //minimale x Koordinate 
 #define MINY 2 //minimale y Koordinate	
@@ -47,7 +47,7 @@ void drawBorder() {
 	gotoxy(0, 0); cout << "----------------------------------------------------"; //erstelle den oberen und unteren Rand
 	gotoxy(0, SCREEN_HEIGHT); cout << "----------------------------------------------------";
 
-	for (int i = 0; i < SCREEN_HEIGHT; i++) {
+	for (int i = 0; i < SCREEN_HEIGHT; i++) { //Die Striche nur so lang wie die HÃ¶he des Spielfeld....
 		gotoxy(0, i); cout << "|"; //erstelle den linken und rechten Rand
 		gotoxy(SCREEN_WIDTH, i); cout << "|";
 	}
@@ -55,9 +55,9 @@ void drawBorder() {
 
 void drawBricks() {
 	for (int i = 0; i < 24; i++) {
-		if (visibleBricks[i] == 1) { //abfrage ist nötig weil sonst die bricks nicht verschwinden wenn man sie trifft
+		if (visibleBricks[i] == 1) { //abfrage ist nÃ¶tig weil sonst die bricks nicht verschwinden wenn man sie trifft
 			gotoxy(bricks[i][1], bricks[i][0]); //zeichne die bricks
-			cout << "±±±±";
+			cout << "Â±Â±Â±Â±";
 		}
 	}
 }
@@ -65,7 +65,7 @@ void drawBricks() {
 void ballHitSlider() {
 	if (ballPos[1] >= boardPos[1] && ballPos[1] <= boardPos[1] + 8) { //+8 damit das ganze Spielfeld mit dem Slider bedeckt wird
 		if (ballPos[0] == boardPos[0] - 1) { //wenn der Ball die gleiche Position hat wie der Slider
-			if (dir == 3) //wenn der Ball unten Links ist dann bringe ihn nach oben Links. Angenommen die Wände gibt es noch nicht...
+			if (dir == 3) //wenn der Ball unten Links ist dann bringe ihn nach oben Links. Angenommen die WÃ¤nde gibt es noch nicht...
 				dir = 2;
 			else if (dir == 4) //wenn der Ball von rechts unten ist, bringe ihn nach rechts oben
 				dir = 1;
@@ -91,7 +91,7 @@ void play() {
 		drawBorder();
 
 		gotoxy(boardPos[1], boardPos[0]); //Slider ausgeben
-		cout << "±±±±±±±±±";
+		cout << "Â±Â±Â±Â±Â±Â±Â±Â±Â±";
 
 		gotoxy(ballPos[1], ballPos[0]); //Ball ausgeben
 		cout << "0";
