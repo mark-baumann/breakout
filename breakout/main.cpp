@@ -93,7 +93,7 @@ void play() {
 		gotoxy(boardPos[1], boardPos[0]); //Slider ausgeben
 		cout << "±±±±±±±±±";
 
-		gotoxy(ballPos[1], ballPos[0]); //Ball ausgeben
+		gotoxy(ballPos[1], ballPos[0]); //Ball ausgeben, 1 ist der zweite wert (x), 0 ist der erste Wert (y)
 		cout << "0";
 
 		if (_kbhit()) {
